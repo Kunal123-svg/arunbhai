@@ -1,147 +1,298 @@
 <!DOCTYPE html>
-<html lang="te">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Day Trader Telugu</title>
+<title>Arun Trademax</title>
 
-<!-- ✅ UPDATED Meta Pixel Code -->
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+t.src='https://connect.facebook.net/en_US/fbevents.js';
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
+}(window, document,'script');
 
-fbq('init', '1679386723028030'); 
+fbq('init', '1075051001594894');
 fbq('track', 'PageView');
 </script>
 
 <noscript>
 <img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1679386723028030&ev=PageView&noscript=1"/>
+src="https://www.facebook.com/tr?id=1075051001594894&ev=PageView&noscript=1"/>
 </noscript>
-<!-- END Meta Pixel Code -->
+<!-- End Meta Pixel Code -->
 
 <style>
-
 *{
-box-sizing:border-box;
-margin:0;
-padding:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body{
-font-family:Arial;
-background:linear-gradient(135deg,#020617,#0f172a);
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
+    background-color: #0b0e14;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
 }
 
-.container{
-width:380px;
-background:#111827;
-border-radius:25px;
-padding:30px;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,0.8);
+.container {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.logo{
-width:110px;
-height:110px;
-border-radius:100px;
-margin-bottom:15px;
-animation:float 3s ease-in-out infinite;
+/* Header Section */
+.header-card {
+    background: linear-gradient(135deg, #4f39f6 0%, #1a1b4b 50%, #0d9488 100%);
+    border-radius: 28px;
+    padding: 24px 20px 28px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-12px)}
-100%{transform:translateY(0)}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-h1{
-font-size:26px;
-margin-bottom:5px;
+.tag-stock {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: #e0e7ff;
+    backdrop-filter: blur(5px);
 }
 
-.badge{
-background:linear-gradient(45deg,#ff512f,#ff9966);
-padding:12px 20px;
-border-radius:30px;
-display:inline-block;
-margin:15px 0;
-font-weight:bold;
+.tag-trusted {
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
-.telegram-btn{
-display:block;
-margin:20px 0;
-padding:18px;
-border-radius:50px;
-background:linear-gradient(90deg,#00c6ff,#0072ff);
-color:white;
-font-weight:bold;
-font-size:18px;
-text-decoration:none;
-animation:glow 1.5s infinite;
+.avatar-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 12px auto;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, #38bdf8, #818cf8);
 }
 
-@keyframes glow{
-0%{box-shadow:0 0 5px #00c6ff;}
-50%{box-shadow:0 0 25px #00c6ff;}
-100%{box-shadow:0 0 5px #00c6ff;}
+.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #1e293b;
 }
 
-.text{
-margin-top:15px;
-line-height:1.7;
-font-size:16px;
+.main-title {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 2px;
 }
 
-.highlight{
-color:#ff6b6b;
-font-weight:bold;
+.sub-title {
+    font-size: 11px;
+    color: #93c5fd;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
-.profit{
-color:#ffd700;
-font-size:20px;
-margin:20px 0;
-font-weight:bold;
+.hero-text {
+    font-size: 14px;
+    color: #e2e8f0;
+    line-height: 1.4;
+    font-weight: 500;
 }
 
-.features{
-margin-top:10px;
-text-align:left;
-line-height:2;
-font-size:15px;
+.hero-text span {
+    color: #fde047;
+    font-weight: 700;
 }
 
-.dm-btn{
-display:block;
-margin-top:20px;
-padding:16px;
-border-radius:40px;
-background:linear-gradient(90deg,#22c55e,#16a34a);
-color:white;
-font-weight:bold;
-text-decoration:none;
+/* Telegram Button */
+.btn-telegram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(255, 126, 95, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.footer{
-margin-top:20px;
-font-size:13px;
-color:#9ca3af;
+.btn-telegram:active {
+    transform: scale(0.98);
 }
 
+.btn-title {
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-subtitle {
+    font-size: 11px;
+    opacity: 0.9;
+    margin-top: 2px;
+}
+
+/* Stats Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.stat-card {
+    background: #131927;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.stat-val {
+    font-size: 20px;
+    font-weight: 800;
+    color: #f59e0b;
+}
+
+.stat-icon {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.stat-lbl {
+    font-size: 10px;
+    color: #94a3b8;
+    font-weight: 700;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* Cards Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.feature-card {
+    background: #131927;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.badge {
+    font-size: 9px;
+    font-weight: 800;
+    padding: 3px 6px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+.badge-live { background: rgba(234, 179, 8, 0.2); color: #eab308; }
+.badge-core { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+.badge-pro { background: rgba(168, 85, 247, 0.2); color: #a855f7; }
+.badge-safe { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
+.badge-grow { background: rgba(59, 130, 246, 0.2); color: #3b82f6; }
+
+/* List Section */
+.offer-section {
+    background: #131927;
+    border: 1px solid #1e293b;
+    border-radius: 18px;
+    padding: 16px;
+}
+
+.offer-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #818cf8;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.offer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.offer-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.offer-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #cbd5e1;
+}
+
+/* Footer */
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.footer-text a {
+    color: #f59e0b;
+    text-decoration: none;
+    font-weight: 600;
+}
 </style>
 </head>
 
@@ -149,47 +300,99 @@ color:#9ca3af;
 
 <div class="container">
 
-<img src="logo.png" class="logo">
+    <!-- Header Card -->
+    <div class="header-card">
+        <div class="top-bar">
+            <span class="tag-stock">• STOCK MARKET</span>
+            <span class="tag-trusted">🛡 Trusted</span>
+        </div>
 
-<h1>📈 Day Trader తెలుగు</h1>
-<div>💸🏆</div>
+        <div class="avatar-wrapper">
+            <img src="logo.png" class="avatar" alt="Arun Trademax">
+        </div>
 
-<div class="badge">🚀 17+ సంవత్సరాల ట్రేడింగ్ అనుభవం</div>
+        <h1 class="main-title">ARUN TRADER MAX</h1>
+        <div class="sub-title">✦ STOCK MARKET ✦</div>
 
-<div>👇👇👇</div>
+        <p class="hero-text">
+            <span>📈 Expert insights & live signals</span> — trade smarter, earn bigger.
+        </p>
+    </div>
 
-<a class="telegram-btn" href="https://t.me/+9WhFzjPgU5M1MTZl" target="_blank"
-onclick="fbq('track','Lead');">
-JOIN TELEGRAM CHANNEL
-</a>
+    <!-- Telegram Button 1 -->
+    <a href="https://t.me/+tnRc9yHN6805NDRl" target="_blank" class="btn-telegram">
+        <div class="btn-title">📲 Join Telegram Channel</div>
+        <div class="btn-subtitle">Get free market tips & trading signals</div>
+    </a>
 
-<div class="text">
-మీరు ట్రేడింగ్ ద్వారా డబ్బు సంపాదించాలనుకుంటున్నారా?<br><br>
-<span class="highlight">
-అయితే పై టెలిగ్రామ్ బటన్ పై క్లిక్ చేయండి 🚀
-</span>
-</div>
+    <!-- Stats Grid -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-val">89%</div>
+            <div class="stat-lbl">WIN RATE</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">📊</div>
+            <div class="stat-lbl">LIVE CALLS</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-val">24/7</div>
+            <div class="stat-lbl">SUPPORT</div>
+        </div>
+    </div>
 
-<div class="profit">
-💎 DAILY PROFIT GUARANTEE 💎
-</div>
+    <!-- Features Grid -->
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="feature-left">📊 Nifty & BankNifty</div>
+            <span class="badge badge-live">LIVE</span>
+        </div>
+        <div class="feature-card">
+            <div class="feature-left">🎯 Entry · SL · Target</div>
+            <span class="badge badge-core">CORE</span>
+        </div>
+        <div class="feature-card">
+            <div class="feature-left">📈 Option Chain Analysis</div>
+            <span class="badge badge-pro">PRO</span>
+        </div>
+        <div class="feature-card">
+            <div class="feature-left">🛡 Risk Management</div>
+            <span class="badge badge-safe">SAFE</span>
+        </div>
+    </div>
 
-<div class="features">
-📊 మా పోర్ట్‌ఫోలియో నుండి లైవ్ ట్రేడ్స్<br>
-🔥 ప్రొఫెషనల్స్ వాడే సిగ్నల్స్<br>
-💯 హై అక్యూరసీ & కన్సిస్టెన్సీ<br>
-⚡ రియల్ టైమ్ అప్డేట్స్
-</div>
+    <!-- What We Offer Section -->
+    <div class="offer-section">
+        <div class="offer-title">🏛 WHAT WE OFFER</div>
+        <div class="offer-list">
+            <div class="offer-item">
+                <div class="offer-info">📊 Live Market Analysis</div>
+                <span class="badge badge-live">LIVE</span>
+            </div>
+            <div class="offer-item">
+                <div class="offer-info">🎯 Trading Calls with Setup</div>
+                <span class="badge badge-pro">PRO</span>
+            </div>
+            <div class="offer-item">
+                <div class="offer-info">📈 Option Buying & Selling</div>
+                <span class="badge badge-grow">GROW</span>
+            </div>
+            <div class="offer-item">
+                <div class="offer-info">🛡 Capital Protection Tips</div>
+                <span class="badge badge-safe">SAFE</span>
+            </div>
+        </div>
+    </div>
 
-<a class="dm-btn" href="https://t.me/+hZA7we0AX_s3ZWQ1" target="_blank"
-onclick="fbq('track','Contact');">
-👉 Meta Ads Setup కోసం DM చేయండి  
-<br> Kunal Ads Agency
-</a>
+    <!-- Telegram Button 2 -->
+    <a href="https://t.me/+tnRc9yHN6805NDRl" target="_blank" class="btn-telegram">
+        <div class="btn-title">📲 Join Telegram Channel</div>
+        <div class="btn-subtitle">Get free market tips & trading signals</div>
+    </a>
 
-<div class="footer">
-©️ 2026 Day Trader Telugu - All rights reserved
-</div>
+    <!-- Footer -->
+    <div class="footer-text">
+        
 
 </div>
 
